@@ -20,30 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="成为掺入现实的一粒沙">
-<meta property="og:type" content="website">
-<meta property="og:title" content="秋叶零的泔水桶">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="0x1 课前预习阅读xv6 book第1章。  fork() 和 exec() 分离的好处？  便于I&#x2F;O重定向。例如如下代码：  1234567int pid &#x3D; fork();if (0 &#x3D;&#x3D; pid) &amp;#123;    char *argv[] &#x3D; &amp;#123; 0 &amp;#125;;    close(1);    int fd &#x3D; open(&quot;out.txt&quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MIT 6.S081 LEC 1">
+<meta property="og:url" content="http://example.com/2023/05/17/MIT-6-S081-LEC-1/index.html">
 <meta property="og:site_name" content="秋叶零的泔水桶">
-<meta property="og:description" content="成为掺入现实的一粒沙">
+<meta property="og:description" content="0x1 课前预习阅读xv6 book第1章。  fork() 和 exec() 分离的好处？  便于I&#x2F;O重定向。例如如下代码：  1234567int pid &#x3D; fork();if (0 &#x3D;&#x3D; pid) &amp;#123;    char *argv[] &#x3D; &amp;#123; 0 &amp;#125;;    close(1);    int fd &#x3D; open(&quot;out.txt&quot;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-05-17T14:50:41.000Z">
+<meta property="article:modified_time" content="2023-05-18T01:57:59.807Z">
 <meta property="article:author" content="秋叶零">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/05/17/MIT-6-S081-LEC-1/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>秋叶零的泔水桶</title>
+  <title>MIT 6.S081 LEC 1 | 秋叶零的泔水桶</title>
   
 
 
@@ -142,9 +144,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -160,10 +163,9 @@
       <meta itemprop="name" content="秋叶零的泔水桶">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/05/17/MIT-6-S081-LEC-1/" class="post-title-link" itemprop="url">MIT 6.S081 LEC 1</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          MIT 6.S081 LEC 1
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -193,7 +195,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="0x1-课前预习"><a href="#0x1-课前预习" class="headerlink" title="0x1 课前预习"></a>0x1 课前预习</h1><p>阅读xv6 book第1章。</p>
+        <h1 id="0x1-课前预习"><a href="#0x1-课前预习" class="headerlink" title="0x1 课前预习"></a>0x1 课前预习</h1><p>阅读xv6 book第1章。</p>
 <ul>
 <li><p><code>fork()</code> 和 <code>exec()</code> 分离的好处？</p>
 <ul>
@@ -240,94 +242,30 @@
 <li>调试的基本操作：一个终端<code>make qemu-gdb</code>，另一个终端<code>gdb</code>（或<code>riscv64-linux-gnu-gdb</code>）</li>
 </ul>
 <h2 id="Lab-Utilities"><a href="#Lab-Utilities" class="headerlink" title="Lab Utilities"></a>Lab Utilities</h2>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/13/Hello-World/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="秋叶零">
-      <meta itemprop="description" content="成为掺入现实的一粒沙">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="秋叶零的泔水桶">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/05/13/Hello-World/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-05-13 23:35:30" itemprop="dateCreated datePublished" datetime="2023-05-13T23:35:30+08:00">2023-05-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-05-14 10:08:21" itemprop="dateModified" datetime="2023-05-14T10:08:21+08:00">2023-05-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="我打算在博客里写什么"><a href="#我打算在博客里写什么" class="headerlink" title="我打算在博客里写什么"></a>我打算在博客里写什么</h1><p>不画大饼，来点具体的。</p>
-<h2 id="博客完善日志"><a href="#博客完善日志" class="headerlink" title="博客完善日志"></a>博客完善日志</h2><p>现在这个博客还只是一个框架，未来我想把它做得更完善美观。</p>
-<p>我不能再忽视“磨刀不误砍柴工”了，也不能再忽视自己那些乱七八糟的兴趣了。</p>
-<h2 id="MIT-6-S081的lab笔记"><a href="#MIT-6-S081的lab笔记" class="headerlink" title="MIT 6.S081的lab笔记"></a>MIT 6.S081的lab笔记</h2><p>把handout一页页读懂，把源码一行行理解，把lab一个个吃透。然后把踩过的坑、得到的启发、莫名其妙的鬼点子记录下来。</p>
-<p>这可比上国内某些课时被压得不像一门专必课，还把学生教得晕头转向的os课程有意思多了。</p>
-<h2 id="ASU-CSE466的lab笔记"><a href="#ASU-CSE466的lab笔记" class="headerlink" title="ASU CSE466的lab笔记"></a>ASU CSE466的lab笔记</h2><p>358个challenges，涵盖linux命令行、shellcode、逆向工程、用户级&#x2F;系统级漏洞利用、杂项……</p>
-<p>完全命中我的爱好！越难越好玩！</p>
-<h2 id="德国观念论学习笔记"><a href="#德国观念论学习笔记" class="headerlink" title="德国观念论学习笔记"></a>德国观念论学习笔记</h2><p>人类哲学史最精华的部分，Marxist必学。</p>
-<p>做哲学笔记能锻炼自己的总结能力和表达能力，总结与表达又可以提高自己的运思水平。所有这些，不论对未来的理论性文本产出，还是对实践中主动权的把握，都大有裨益。</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/05/13/Hello-World/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -380,6 +318,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x1-%E8%AF%BE%E5%89%8D%E9%A2%84%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">0x1 课前预习</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x2-%E6%AD%A3%E5%BC%8F%E4%B8%8A%E8%AF%BE"><span class="nav-number">2.</span> <span class="nav-text">0x2 正式上课</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x3-Lab"><span class="nav-number">3.</span> <span class="nav-text">0x3 Lab</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lab-Guidance"><span class="nav-number">3.1.</span> <span class="nav-text">Lab Guidance</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lab-Utilities"><span class="nav-number">3.2.</span> <span class="nav-text">Lab Utilities</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
